@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Sử Mua Hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            background-color: #4d8a54;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .logo-back {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+        }
+        .logo-back img {
+            width: 30px; /* Chỉnh kích thước logo */
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #4d8a54;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        table th {
+            background-color: #4d8a54;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .status {
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .status.pending {
+            background-color: #ffa500;
+            color: white;
+        }
+        .status.completed {
+            background-color: #4d8a54;
+            color: white;
+        }
+        .status.canceled {
+            background-color: #ff4d4d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="loginsuccess.html" class="logo-back">
+            <img src="https://bizweb.dktcdn.net/100/415/010/themes/894852/assets/logo.png?1676274744913" alt="Logo">
+            Quay lại Trang Chủ
+        </a>
+        <h1>Lịch Sử Mua Hàng</h1>
+    </header>
+    <div class="container">
+        <h2>Danh sách đơn hàng</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Ngày Mua</th>
+                    <th>Số Lượng</th>
+                    <th>Giá Tiền</th>
+                    <th>Trạng Thái</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Đơn hàng 1 -->
+                <tr>
+                    <td>1</td>
+                    <td>Cà Phê Latte</td>
+                    <td>2024-12-05</td>
+                    <td>1</td>
+                    <td>40.000₫</td>
+                    <td><span class="status completed">Hoàn thành</span></td>
+                    <td><a href="#" style="color: #4d8a54; text-decoration: none;">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Trà Vải</td>
+                    <td>2024-12-06</td>
+                    <td>2</td>
+                    <td>80.000₫</td>
+                    <td><span class="status pending">Đang xử lý</span></td>
+                    <td><a href="#" style="color: #4d8a54; text-decoration: none;">Xem chi tiết</a></td>
+                </tr>
+                <!-- Đơn hàng 2 -->
+                <tr>
+                    <td>3</td>
+                    <td>Cà Phê Cappuccino</td>
+                    <td>2024-12-04</td>
+                    <td>1</td>
+                    <td>40.000₫</td>
+                    <td><span class="status completed">Hoàn thành</span></td>
+                    <td><a href="#" style="color: #4d8a54; text-decoration: none;">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Trà Phúc Bồn Tử</td>
+                    <td>2024-12-04</td>
+                    <td>1</td>
+                    <td>45.000₫</td>
+                    <td><span class="status completed">Hoàn thành</span></td>
+                    <td><a href="#" style="color: #4d8a54; text-decoration: none;">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Trà Dâu</td>
+                    <td>2024-12-04</td>
+                    <td>1</td>
+                    <td>40.000₫</td>
+                    <td><span class="status canceled">Đã hủy</span></td>
+                    <td><a href="#" style="color: #4d8a54; text-decoration: none;">Xem chi tiết</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
